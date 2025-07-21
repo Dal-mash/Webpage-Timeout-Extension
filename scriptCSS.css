@@ -1,0 +1,66 @@
+.PopUP {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: auto;
+    background: rgba(20, 20, 20, 0.5); 
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    animation: popupFadeIn 0.3s ease-out;
+}
+
+.PopUP-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.PopUP-button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    background: rgba(80, 80, 80, 0.3); 
+    color: #e0e0e0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.15s ease;
+    backdrop-filter: blur(4px);
+}
+
+.PopUP-button:hover {
+    background: rgba(120, 120, 120, 0.5);
+    transform: translateY(-2px);
+}
+
+.PopUP.hide {
+    display: none;
+}
+
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+p{
+    color:white;
+    font-size: 16px;
+}
