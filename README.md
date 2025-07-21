@@ -8,3 +8,5 @@ Meaning You can stay on the webpage for 5, 10 or 15 minutes.
 IF you are still on the webpage after the selected time is over. The extension automatically closes the tab and sets a cooldown of 15.
 IF you try to go to the webpage again before the cooldown is over, then the tab or webpage simply closes immediatly.
 This was made to help ppl that are trying to limit their screen time but are failing to do so.
+
+THERE ARE A COUPLE OF ISSUES WITH ADDING MULTIPLE URLS TO THE EXTENSION BUT ITS A WORK IN PROGRESS.
